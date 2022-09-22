@@ -27,3 +27,20 @@
 .nav-r {
   margin-right: 350px !important;
 }
+
+.modal-body {
+  padding: 25px 75px 25px 75px;
+}
+
+.modal-header {
+  padding: 10px 22px 0px 22px;
+}
+
+.modal-content {
+  border-radius: 1.3rem;
+}
+
+.createbtn {
+  color: white;
+  background-color: #086288;
+}

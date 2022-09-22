@@ -37,7 +37,7 @@
           <button
             class="btn newbtn d-flex justify-content-end"
             data-toggle="modal"
-            data-target="#exampleModal"
+            data-target="#addmock"
             data-whatever="@getbootstrap"
           >
             Create Mock
@@ -155,7 +155,7 @@
           id="exampleModalLabel"
           style="color: #086288; font-size: 16px; font-weight: 500"
         >
-          Add new mentor
+          Mock Rating
         </p>
         <button
           type="button"
@@ -166,40 +166,160 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form [formGroup]="mentorForm">
+      <form class="add" [formGroup]="mentorForm">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Mock Type</label>
+                <select
+                  class="form-control"
+                  formControlName="skill"
+                  id="exampleFormControlSelect1"
+                >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exampleInputPassword1">Mock taken by</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="mentorname"
+                  id="exampleInputPassword1"
+                  placeholder="Batch Name"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Technology</label>
+                <select
+                  class="form-control"
+                  formControlName="skill"
+                  id="exampleFormControlSelect1"
+                >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exampleInputPassword1"
+                  >Practical Knowledge(out of 100)</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="mentorname"
+                  id="exampleInputPassword1"
+                  placeholder="Batch Name"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exampleInputPassword1"
+                  >Theoretical Knowledge( out of 100) *</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="mentorname"
+                  id="exampleInputPassword1"
+                  placeholder="Batch Name"
+                />
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1"
+                  >Overall Feedback((Practical + Theoretical)/2 ) *</label
+                >
+                <select
+                  class="form-control"
+                  formControlName="skill"
+                  id="exampleFormControlSelect1"
+                >
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"
+                  >Detailed Feedback <sup>*</sup></label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="btn createbtn"
+            (click)="submitMentorForm(mentorForm)"
+            data-dismiss="modal"
+          >
+            Create
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div
+  class="modal fade"
+  id="addmock"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <p
+          class="modal-title"
+          id="exampleModalLabel"
+          style="color: #086288; font-size: 16px; font-weight: 500"
+        >
+          Add Mock
+        </p>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="create" [formGroup]="mentorForm">
         <div class="modal-body">
           <div class="form-group">
-            <label for="exampleInputPassword1">Mentor Name</label>
-            <input
-              type="text"
-              class="form-control"
-              formControlName="mentorname"
-              id="exampleInputPassword1"
-              placeholder="Batch Name"
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Employee ID</label>
-            <input
-              type="text"
-              class="form-control"
-              formControlName="empid"
-              id="exampleInputPassword1"
-              placeholder="Start Date"
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">E-mail ID</label>
-            <input
-              type="text  "
-              class="form-control"
-              formControlName="email"
-              id="exampleInputPassword1"
-              placeholder="End Date"
-            />
-          </div>
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Skills</label>
+            <label for="exampleFormControlSelect1">Batch ID</label>
             <select
               class="form-control"
               formControlName="skill"
@@ -211,6 +331,52 @@
               <option>4</option>
               <option>5</option>
             </select>
+          </div>
+
+          <div class="form-group">
+            <label for="exampleInputPassword1">Mock no</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="mentorname"
+              id="exampleInputPassword1"
+              placeholder="Batch Name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Technology</label>
+            <input
+              type="text"
+              class="form-control"
+              formControlName="empid"
+              id="exampleInputPassword1"
+              placeholder="Start Date"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlSelect1">Panel</label>
+            <select
+              class="form-control"
+              formControlName="skill"
+              id="exampleFormControlSelect1"
+            >
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Date & Time</label>
+            <input
+              type="date  "
+              class="form-control"
+              formControlName="email"
+              id="exampleInputPassword1"
+              placeholder="End Date"
+            />
           </div>
         </div>
         <div class="modal-footer">

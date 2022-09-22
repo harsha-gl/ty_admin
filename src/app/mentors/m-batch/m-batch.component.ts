@@ -2,6 +2,7 @@ import { SelectionModel } from '@angular/cdk/collections';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MatTableDataSource } from '@angular/material/table';
+import { Router } from '@angular/router';
 
 export interface PeriodicElement {
   name: string;
@@ -95,7 +96,7 @@ export class MBatchComponent implements OnInit {
   ];
 
   mentorForm!: FormGroup;
-  constructor(private fb: FormBuilder) {}
+  constructor(private fb: FormBuilder, private route: Router) {}
 
   ngOnInit(): void {
     this.mentorForm = this.fb.group({
@@ -138,5 +139,9 @@ export class MBatchComponent implements OnInit {
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${
       row.position + 1
     }`;
+  }
+
+  navigate() {
+    this.route.navigate(['mentors/emplist']);
   }
 }

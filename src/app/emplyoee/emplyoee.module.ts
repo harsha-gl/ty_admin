@@ -12,6 +12,7 @@ import { BankDetailesComponent } from './bank-detailes/bank-detailes.component';
 import { TechnicalSkillsComponent } from './technical-skills/technical-skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { ContactComponent } from './contact/contact.component';
+import { ResetComponent } from './reset/reset.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ContactComponent } from './contact/contact.component';
     TechnicalSkillsComponent,
     ExperienceComponent,
     ContactComponent,
+    ResetComponent,
   ],
   imports: [CommonModule, EmplyoeeRoutingModule, SharedModule],
 })

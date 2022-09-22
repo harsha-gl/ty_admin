@@ -5,3 +5,10 @@
   font-size: 25px;
   font-weight: 500;
 }
+.sub-text {
+  font-weight: 500;
+}
+.nextbtn {
+  color: white;
+  background-color: #086288;
+}
