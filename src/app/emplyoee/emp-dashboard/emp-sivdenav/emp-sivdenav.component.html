@@ -1,0 +1,52 @@
+<mat-nav-list>
+  <a
+    mat-list-item
+    [routerLink]="['empdetailes']"
+    [routerLinkActive]="['active']"
+    (keydown.escape)="$event.stopPropagation()"
+  >
+    <div class="d-flex flex-column align-items-center">
+      <div class="icon">
+        <img class="img1" src="../../../assets/images/batch.png" alt="" /><img
+          class="img2"
+          src="../../../assets/images/batchwhite.png"
+          alt=""
+        />
+      </div>
+      <div class="listName">Batch</div>
+    </div>
+  </a>
+  <!-- <a
+    mat-list-item
+    [routerLink]="['mentor']"
+    [routerLinkActive]="['active']"
+    (keydown.escape)="$event.stopPropagation()"
+  >
+    <div class="d-flex flex-column align-items-center">
+      <div class="icon">
+        <img class="img1" src="../../../assets/images/mentor.png" alt="" />
+        <img class="img2" src="../../../assets/images/mentorwhite.png" alt="" />
+      </div>
+      <div class="listName">Mentor</div>
+    </div>
+  </a> -->
+
+  <!-- <a
+    mat-list-item
+    [routerLink]="['request']"
+    [routerLinkActive]="['active']"
+    (keydown.escape)="$event.stopPropagation()"
+  >
+    <div class="d-flex flex-column align-items-center">
+      <div class="icon">
+        <img class="img1" src="../../../assets/images/request.png" alt="" />
+        <img
+          class="img2"
+          src="../../../assets/images/requestwhite.png"
+          alt=""
+        />
+      </div>
+      <div class="listName">Request</div>
+    </div>
+  </a> -->
+</mat-nav-list>

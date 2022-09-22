@@ -1,0 +1,30 @@
+table {
+  width: 100%;
+}
+
+.newbtn {
+  color: white;
+  background-color: orange;
+}
+
+.newbtn:hover {
+  color: white;
+  background-color: orange;
+}
+th.mat-header-cell {
+  text-align: left;
+  font-weight: 500;
+  font-size: 14px;
+  color: black;
+}
+.rejectbtn {
+  color: #b2000c80;
+  background-color: #ce000e1a;
+  margin-left: 10px;
+  border-color: #b2000c80;
+}
+.selectbtn {
+  color: #00811a80;
+  background-color: #00951e1a;
+  border: 1px solid #00811a80;
+}

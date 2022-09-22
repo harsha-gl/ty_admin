@@ -1,0 +1,72 @@
+<!-- <mat-nav-list>
+    <mat-list-item>
+
+        <a matLine routerLink="batch"><img src="../../../assets/images/batch.png" alt="">
+            <p class="labels">Batch</p>
+        </a>
+    </mat-list-item>
+    <mat-list-item>
+        <a matLine><img src="../../../assets/images/mentor.png" alt="">
+            <p class="labels">Mentor</p>
+        </a>
+    </mat-list-item>
+    <mat-list-item>
+        <a matLine><img src="../../../assets/images/request.png" alt="">
+            <p class="labels">Request</p>
+        </a>
+
+    </mat-list-item>
+</mat-nav-list> -->
+
+<mat-nav-list>
+  <a
+    mat-list-item
+    [routerLink]="['batch']"
+    [routerLinkActive]="['active']"
+    (keydown.escape)="$event.stopPropagation()"
+  >
+    <div class="d-flex flex-column align-items-center">
+      <div class="icon">
+        <img class="img1" src="../../../assets/images/batch.png" alt="" /><img
+          class="img2"
+          src="../../../assets/images/batchwhite.png"
+          alt=""
+        />
+      </div>
+      <div class="listName">Batch</div>
+    </div>
+  </a>
+  <a
+    mat-list-item
+    [routerLink]="['mentor']"
+    [routerLinkActive]="['active']"
+    (keydown.escape)="$event.stopPropagation()"
+  >
+    <div class="d-flex flex-column align-items-center">
+      <div class="icon">
+        <img class="img1" src="../../../assets/images/mentor.png" alt="" />
+        <img class="img2" src="../../../assets/images/mentorwhite.png" alt="" />
+      </div>
+      <div class="listName">Mentor</div>
+    </div>
+  </a>
+
+  <a
+    mat-list-item
+    [routerLink]="['request']"
+    [routerLinkActive]="['active']"
+    (keydown.escape)="$event.stopPropagation()"
+  >
+    <div class="d-flex flex-column align-items-center">
+      <div class="icon">
+        <img class="img1" src="../../../assets/images/request.png" alt="" />
+        <img
+          class="img2"
+          src="../../../assets/images/requestwhite.png"
+          alt=""
+        />
+      </div>
+      <div class="listName">Request</div>
+    </div>
+  </a>
+</mat-nav-list>

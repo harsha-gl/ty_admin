@@ -1,0 +1,39 @@
+.mat-stepper-horizontal {
+  margin-top: 8px;
+}
+
+.mat-form-field {
+  margin-top: 16px;
+}
+/* ::ng-deep .mat-step-header .mat-step-label.mat-step-label-active {
+  font-size: 20px !important;
+} */
+
+::ng-deep .mat-step-label-selected {
+  font-size: 25px !important;
+  border-bottom: 4px solid orange;
+  padding-bottom: 8px !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-edit {
+  background-color: #00b530;
+  color: white;
+}
+
+::ng-deep .mat-stepper-horizontal-line {
+  border-top-width: 0px !important;
+  border-top-style: none;
+}
+::ng-deep .mat-step-header .mat-step-label.mat-step-label-active {
+  color: #086288 !important;
+}
+.nextbtn {
+  color: white;
+  background-color: #086288;
+}
+::ng-deep .mat-step-header .mat-step-icon-selected,
+.mat-step-header .mat-step-icon-state-done,
+.mat-step-header .mat-step-icon-state-edit {
+  background-color: #086288;
+  color: #fff;
+}

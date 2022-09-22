@@ -1,0 +1,31 @@
+<mat-stepper>
+  <mat-step label="Primary Info" state="phone">
+    <app-primaryinfo></app-primaryinfo>
+  </mat-step>
+  <mat-step label="Secondary Info" state="chat">
+    <app-secondaryinfo></app-secondaryinfo>
+  </mat-step>
+  <mat-step label="Education Details" state="phone">
+    <app-educational-detailes></app-educational-detailes>
+  </mat-step>
+  <mat-step label="Address Details" state="chat">
+    <app-address-detailes></app-address-detailes>
+  </mat-step>
+  <mat-step label="Bank Details" state="phone">
+    <app-bank-detailes></app-bank-detailes>
+  </mat-step>
+  <mat-step label="Technical Skills" state="chat">
+    <app-technical-skills></app-technical-skills>
+  </mat-step>
+  <mat-step label="Experience">
+    <app-experience></app-experience>
+  </mat-step>
+  <mat-step label="Contact">
+    <app-contact></app-contact>
+  </mat-step>
+
+  <!-- change default 'edit' icon -->
+  <ng-template matStepperIcon="edit">
+    <mat-icon>check_circle</mat-icon>
+  </ng-template>
+</mat-stepper>

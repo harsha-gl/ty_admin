@@ -1,0 +1,29 @@
+.navbar {
+  height: 60px;
+  box-shadow: 7px 8px 42px 5px grey;
+  background: white !important;
+}
+
+.navbar-brand {
+  width: 30%;
+}
+.logout {
+  color: #075575;
+  background-color: white;
+  border: 1px solid #075575;
+}
+.example-action-buttons {
+  padding-bottom: 20px;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+.nav-r {
+  margin-right: 350px !important;
+}

@@ -1,0 +1,9 @@
+<app-m-header></app-m-header>
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened="sideBarOpen">
+    <app-m-sidenav></app-m-sidenav>
+  </mat-drawer>
+  <mat-drawer-content>
+    <router-outlet></router-outlet>
+  </mat-drawer-content>
+</mat-drawer-container>

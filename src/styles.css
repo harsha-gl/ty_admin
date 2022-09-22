@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.modal-backdrop {
+  z-index: 0 !important;
+}
+.nextbtn {
+  color: white;
+  background-color: #086288;
+}
+.footer-btn {
+  border: 1px solid #00000029;
+  padding: 10px;
+  border-radius: 5px;
+}
+.mat-elevation-z8 {
+  box-shadow: none !important;
+}
+thead {
+  background-color: #e9eef7 !important;
+}

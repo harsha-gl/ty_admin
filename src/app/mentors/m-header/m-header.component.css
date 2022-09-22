@@ -1,0 +1,14 @@
+.navbar {
+  height: 50px;
+  box-shadow: 7px 8px 42px 5px grey;
+  background: white !important;
+}
+
+.navbar-brand {
+  width: 30%;
+}
+.logout {
+  color: #075575;
+  background-color: white;
+  border: 1px solid #075575;
+}

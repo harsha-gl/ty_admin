@@ -1,0 +1,21 @@
+table {
+  width: 100%;
+}
+
+.newbtn {
+  color: white;
+  background-color: orange;
+}
+
+.newbtn:hover {
+  color: white;
+  background-color: orange;
+}
+
+.attendbtn {
+  color: #086288;
+}
+.attendbtn:hover {
+  background-color: #086288;
+  color: white;
+}

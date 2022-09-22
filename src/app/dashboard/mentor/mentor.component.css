@@ -1,0 +1,24 @@
+table {
+  width: 100%;
+}
+
+.newbtn {
+  color: white;
+  background-color: orange;
+}
+
+.newbtn:hover {
+  color: white;
+  background-color: orange;
+}
+.modal-body {
+  padding: 25px 75px 25px 75px;
+}
+
+.modal-header {
+  padding: 10px 22px 0px 22px;
+}
+.createbtn {
+  color: white;
+  background-color: #086288;
+}
